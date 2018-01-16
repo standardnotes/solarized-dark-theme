@@ -1,0 +1,356 @@
+:root {
+  --background-1: #002B36;
+  --background-2: #083642;
+  --foreground-color: #FDF6E3;
+  --highlight-color: #2AA198;
+  --border-color: #083642;
+  --accent-1: #93A1A1;
+  --accent-2: #D6488A;
+  --accent-3: #6B71C4;
+  --accent-4: #859901;
+  --accent-5: #B58900;
+  --content-1: #586D75;
+  --content-2: #667A83;
+  --content-3: #839496;
+  --content-4: #93A1A1;
+  /* Footer */
+  --footer-bar-border-top-color: 0;
+  /* Column Menus */
+  --menu-item-sep-color: rgba(0, 0, 0, 0.1);
+}
+
+/* General */
+::selection {
+  background: var(--highlight-color) !important;
+  /* WebKit/Blink Browsers */
+  color: var(--foreground-color) !important;
+}
+
+::-moz-selection {
+  background: var(--highlight-color) !important;
+  /* Gecko Browsers */
+  color: var(--foreground-color) !important;
+}
+
+panel-resizer {
+  background-color: var(--background-2) !important;
+}
+
+input {
+  color: var(--content-4) !important;
+}
+
+body {
+  color: var(--foreground-color) !important;
+}
+
+.app .section > .content {
+  background-color: var(--background-1) !important;
+}
+
+.add-button {
+  background-color: var(--background-1) !important;
+  color: var(--foreground-color) !important;
+}
+
+.blue {
+  /*legacy*/
+  color: var(--highlight-color) !important;
+}
+
+.tinted {
+  color: var(--highlight-color) !important;
+}
+
+.tinted-selected {
+  color: var(--foreground-color) !important;
+}
+
+.app-bar {
+  background-color: var(--background-1) !important;
+  border: none !important;
+}
+
+.app-bar .item:hover > .label,
+.app-bar .item:hover > .sublabel,
+.app-bar .item:hover > .column > .label,
+.app-bar .item:hover > .column > .sublabel {
+  color: var(--highlight-color) !important;
+}
+
+.app-bar .item.border {
+  border-color: var(--border-color) !important;
+}
+
+.section-title-bar {
+  color: var(--foreground-color) !important;
+  background-color: var(--background-1) !important;
+}
+
+.section-title-bar-header .title {
+  color: var(--foreground-color) !important;
+}
+
+/* Tags */
+.app .tags, .tags .content {
+  background-color: var(--background-1) !important;
+}
+
+#tags-title-bar {
+  color: var(--foreground-color) !important;
+}
+
+.tags .tag {
+  color: var(--foreground-color) !important;
+}
+
+.tags .tag > .info > .title {
+  color: var(--accent-1) !important;
+}
+
+.tags .tag a {
+  color: var(--foreground-color) !important;
+}
+
+.tags .tag.selected > .info > .title {
+  color: var(--foreground-color) !important;
+}
+
+.tags .tag > .info > .count {
+  color: var(--highlight-color) !important;
+}
+
+.tags .tag.selected {
+  background-color: var(--highlight-color) !important;
+  color: var(--foreground-color) !important;
+}
+
+.tags .tag:hover:not(.selected) {
+  background-color: var(--highlight-color) !important;
+  color: var(--foreground-color) !important;
+}
+
+.tags .tag:hover:not(.selected) .info > .title {
+  color: var(--foreground-color) !important;
+}
+
+/* Notes */
+.app .notes .content {
+  background-color: var(--background-1) !important;
+}
+
+.notes {
+  border-left: 0 !important;
+  border-right: 0 !important;
+}
+
+#notes-title-bar {
+  color: var(--foreground-color) !important;
+  background-color: var(--background-1) !important;
+}
+
+.notes .filter-section .filter-bar {
+  background-color: var(--background-1) !important;
+}
+
+.notes .note.selected {
+  background-color: var(--highlight-color) !important;
+  color: var(--foreground-color) !important;
+  border-left: 0 !important;
+  border-right: 0 !important;
+}
+
+#notes-column #notes-title-bar, .notes #notes-title-bar {
+  border-left: 1px solid var(--background-2) !important;
+  border-right: 1px solid var(--background-2) !important;
+}
+
+.notes .note {
+  border-bottom: 1px solid var(--background-2) !important;
+  background-color: var(--background-1) !important;
+  color: var(--accent-1);
+}
+
+.note .name {
+  color: var(--foreground-color);
+}
+
+.note .date {
+  color: var(--highlight-color) !important;
+}
+
+.note.selected .date {
+  color: var(--foreground-color) !important;
+}
+
+.notes .scrollable {
+  border-left: 1px solid var(--background-2) !important;
+  border-right: 1px solid var(--background-2) !important;
+}
+
+/* Editor */
+#editor-title-bar {
+  background-color: var(--background-1) !important;
+}
+
+#editor-title-bar > .title > .input {
+  color: var(--foreground-color) !important;
+}
+
+.editor-content {
+  background-color: var(--background-1) !important;
+}
+
+.editor-content .editable {
+  background-color: var(--background-1);
+  color: var(--content-4);
+}
+
+#editor-title-bar .editor-tags .tags-input {
+  color: var(--foreground-color) !important;
+}
+
+#editor-title-bar #save-status {
+  color: #4C4C4C !important;
+}
+
+#editor-pane-component-stack .component:first-child {
+  border-top: 1px solid var(--border-color) !important;
+}
+
+/* Footer */
+#footer-bar {
+  border-top: 1px solid var(--footer-bar-border-top-color) !important;
+  background-color: var(--background-1) !important;
+}
+
+/* Editors */
+.CodeMirror {
+  background-color: var(--background-1) !important;
+  color: var(--content-4) !important;
+  border: 0 !important;
+}
+
+.CodeMirror-cursor {
+  border-color: white;
+}
+
+.CodeMirror-selected {
+  background: var(--background-1) !important;
+}
+
+.CodeMirror-gutters {
+  background-color: var(--background-1) !important;
+  color: var(--content-4) !important;
+  border-color: var(--border-color) !important;
+}
+
+.CodeMirror .cm-header {
+  font-family: arial;
+  color: var(--content-4) !important;
+}
+
+.CodeMirror .cm-variable-2 {
+  font-family: arial;
+  color: var(--highlight-color) !important;
+}
+
+.CodeMirror .cm-link, .cm-string, .cm-keyword {
+  font-family: arial;
+  color: var(--content-4) !important;
+}
+
+.CodeMirror .CodeMirror-linenumber {
+  color: gray !important;
+}
+
+/* Code Editor bottom toolbar */
+#select-wrapper {
+  background-color: var(--background-1) !important;
+  color: var(--content-4) !important;
+  border-color: var(--border-color) !important;
+}
+
+/* Advanced Markdown top toolbar */
+.editor-toolbar {
+  background-color: var(--background-1) !important;
+  border-color: var(--border-color) !important;
+}
+
+.editor-toolbar::before, ::after {
+  background: 0 !important;
+}
+
+.editor-toolbar a {
+  color: var(--content-4) !important;
+}
+
+/* Simple Markdown Editor */
+#simple-markdown {
+  background-color: var(--background-1) !important;
+  color: var(--content-4) !important;
+}
+
+#simple-markdown #editor {
+  background-color: var(--background-1) !important;
+  color: var(--content-4) !important;
+}
+
+#simple-markdown #column-resizer {
+  background-color: var(--highlight-color) !important;
+}
+
+/* Plus Editor */
+#plus-editor .note-editor.note-frame.fullscreen .note-editable {
+  background-color: var(--background-1) !important;
+  color: var(--content-4) !important;
+}
+
+#plus-editor .panel-default > .panel-heading {
+  background-color: var(--border-color) !important;
+}
+
+#plus-editor .btn-default {
+  color: var(--content-4) !important;
+  background-color: var(--background-1) !important;
+  border-color: var(--background-1) !important;
+}
+
+#plus-editor .panel-heading {
+  border-color: var(--border-color) !important;
+}
+
+#plus-editor .dropdown-menu > li > a {
+  color: var(--content-4);
+}
+
+.component-stack-border {
+  border-color: var(--border-color) !important;
+}
+
+/*SN Components */
+:root {
+  --body-text-color: var(--content-4);
+  --body-background-color: var(--background-1);
+  --element-text-color: var(--content-4);
+  --element-background-color: var(--background-1);
+  --tint-color: var(--highlight-color);
+}
+
+.sn-component .element-background-color {
+  background-color: var(--element-background-color);
+}
+
+.sn-component .body-background-color {
+  background-color: var(--body-background-color);
+}
+
+.sn-component .element-text-color {
+  color: var(--element-text-color);
+}
+
+.sn-component .body-text-color {
+  color: var(--body-text-color);
+}
+
+/*# sourceMappingURL=dist.css.map */
