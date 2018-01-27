@@ -73,7 +73,11 @@ body {
 
 .app-bar {
   background-color: var(--background-1) !important;
-  border: none !important;
+  border-color: var(--border-color) !important;
+
+  .item.border {
+    border-color: var(--border-color) !important;
+  }
 }
 
 .app-bar .item:hover > .label,
@@ -81,10 +85,6 @@ body {
 .app-bar .item:hover > .column > .label,
 .app-bar .item:hover > .column > .sublabel {
   color: var(--highlight-color) !important;
-}
-
-.app-bar .item.border {
-  border-color: var(--border-color) !important;
 }
 
 .section-title-bar {
@@ -358,4 +358,8 @@ body {
 
 .sn-component .body-text-color {
   color: var(--body-text-color);
+}
+
+.sn-component .border-color {
+  border-color: var(--border-color) !important;
 }
