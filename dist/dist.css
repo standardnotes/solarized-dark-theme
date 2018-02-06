@@ -196,7 +196,7 @@ body {
   color: var(--foreground-color) !important;
 }
 
-.editor-content {
+.editor, .editor-content {
   background-color: var(--background-1) !important;
 }
 
