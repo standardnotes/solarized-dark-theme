@@ -229,7 +229,11 @@ body {
 }
 
 .CodeMirror-selected {
-  background: var(--background-1) !important;
+  background-color: var(--highlight-color) !important;
+}
+
+.CodeMirror-selectedtext {
+  color: var(--foreground-color) !important;
 }
 
 .CodeMirror-gutters {
@@ -276,6 +280,16 @@ body {
 
 .editor-toolbar a {
   color: var(--content-4) !important;
+}
+
+.editor-preview-active, .editor-preview-active-side {
+  background-color: var(--background-1) !important;
+  border: 0 !important;
+  border-left: 1px solid white !important;
+}
+
+.editor-preview-active {
+  border: 0 !important;
 }
 
 /* Simple Markdown Editor */
