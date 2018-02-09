@@ -286,6 +286,7 @@ body {
   background-color: var(--background-1) !important;
   border: 0 !important;
   border-left: 1px solid white !important;
+  color: var(--foreground-color) !important;
 }
 
 .editor-preview-active {
