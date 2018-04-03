@@ -6,6 +6,7 @@
   --foreground-color: #FDF6E3;
   --highlight-color: #2AA198;
   --border-color: #083642;
+  --pre-color: #d6dbdb;
 
   --accent-1: #93A1A1;
   --accent-2: #D6488A;
@@ -334,6 +335,10 @@ body {
 
 #plus-editor .dropdown-menu>li>a {
     color: var(--content-4);
+}
+
+#plus-editor pre {
+    background-color: var(--pre-color);
 }
 
 .component-stack-border {
