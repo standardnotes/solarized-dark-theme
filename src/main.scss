@@ -25,6 +25,12 @@
   /* Column Menus */
   --menu-item-sep-color: rgba(0, 0, 0, 0.1);
 
+  --sn-component-foreground-color: var(--content-1);
+  --sn-component-background-color: var(--border-color);
+  --sn-component-foreground-highlight-color: var(--highlight-color);
+  --sn-component-outer-border-color: transparent;
+  --sn-component-inner-border-color: var(--highlight-color);
+
   --sn-desktop-titlebar-bg-color: var(--background-1);
   --sn-desktop-titlebar-border-color: var(--border-color);
   --sn-desktop-titlebar-ui-color: var(--foreground-color);
