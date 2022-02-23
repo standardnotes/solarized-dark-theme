@@ -1,5 +1,5 @@
 {
-  "name": "sn-theme-solarized-dark",
+  "name": "@standardnotes/solarized-dark-theme",
   "version": "1.2.5",
   "main": "dist/dist.css",
   "devDependencies": {
